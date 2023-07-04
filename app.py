@@ -7,7 +7,6 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe = pipe.to("cuda")
 
 def generate_image(prompt):
-    prompt = "a photo of an astronaut riding a horse on mars"
     image = pipe(prompt, height=640, width=360).images[0] 
     return image
 
