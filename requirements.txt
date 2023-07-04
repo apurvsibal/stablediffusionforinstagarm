@@ -1,0 +1,5 @@
+PIL
+diffusers
+torch
+transformers
+accelerate
